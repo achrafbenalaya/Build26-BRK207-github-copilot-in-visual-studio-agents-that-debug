@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="AGENTS.md" />
+  </Folder>
   <Project Path="woldcupunittest/woldcupunittest.csproj" />
   <Project Path="worldcup2026/worldcup2026.csproj" />
 </Solution>
