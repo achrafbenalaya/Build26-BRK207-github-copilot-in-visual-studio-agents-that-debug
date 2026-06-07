@@ -1,80 +1,1027 @@
 {
-  "source": "Manually curated FIFA World Cup 2026 group-stage opening fixtures (placeholder).",
-  "notice": "Replace with the official schedule once published. Times are TBD/UTC.",
+  "source": "FIFA World Cup 2026 official match schedule (group stage) — compiled into JSON.",
+  "notice": "Kickoff times are placeholders (T00:00:00Z). Replace with official kickoff times from FIFA before use.",
   "teams": [
-    { "code": "MEX", "name": "Mexico", "slug": "mexico", "flag_url": null },
-    { "code": "USA", "name": "United States", "slug": "united-states", "flag_url": null },
-    { "code": "CAN", "name": "Canada", "slug": "canada", "flag_url": null },
-    { "code": "ARG", "name": "Argentina", "slug": "argentina", "flag_url": null },
-    { "code": "FRA", "name": "France", "slug": "france", "flag_url": null },
-    { "code": "BRA", "name": "Brazil", "slug": "brazil", "flag_url": null },
-    { "code": "ENG", "name": "England", "slug": "england", "flag_url": null },
-    { "code": "ESP", "name": "Spain", "slug": "spain", "flag_url": null },
-    { "code": "GER", "name": "Germany", "slug": "germany", "flag_url": null },
-    { "code": "POR", "name": "Portugal", "slug": "portugal", "flag_url": null },
-    { "code": "NED", "name": "Netherlands", "slug": "netherlands", "flag_url": null },
-    { "code": "BEL", "name": "Belgium", "slug": "belgium", "flag_url": null }
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "slug": "mexico",
+      "flag_url": null
+    },
+    {
+      "code": "RSA",
+      "name": "South Africa",
+      "slug": "south-africa",
+      "flag_url": null
+    },
+    {
+      "code": "KOR",
+      "name": "Korea Republic",
+      "slug": "korea-republic",
+      "flag_url": null
+    },
+    {
+      "code": "CZE",
+      "name": "Czechia",
+      "slug": "czechia",
+      "flag_url": null
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "slug": "canada",
+      "flag_url": null
+    },
+    {
+      "code": "BIH",
+      "name": "Bosnia and Herzegovina",
+      "slug": "bosnia-and-herzegovina",
+      "flag_url": null
+    },
+    {
+      "code": "QAT",
+      "name": "Qatar",
+      "slug": "qatar",
+      "flag_url": null
+    },
+    {
+      "code": "SUI",
+      "name": "Switzerland",
+      "slug": "switzerland",
+      "flag_url": null
+    },
+    {
+      "code": "HTI",
+      "name": "Haiti",
+      "slug": "haiti",
+      "flag_url": null
+    },
+    {
+      "code": "SCO",
+      "name": "Scotland",
+      "slug": "scotland",
+      "flag_url": null
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "slug": "brazil",
+      "flag_url": null
+    },
+    {
+      "code": "MAR",
+      "name": "Morocco",
+      "slug": "morocco",
+      "flag_url": null
+    },
+    {
+      "code": "USA",
+      "name": "United States",
+      "slug": "united-states",
+      "flag_url": null
+    },
+    {
+      "code": "PAR",
+      "name": "Paraguay",
+      "slug": "paraguay",
+      "flag_url": null
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "slug": "australia",
+      "flag_url": null
+    },
+    {
+      "code": "TUR",
+      "name": "Türkiye",
+      "slug": "turkiye",
+      "flag_url": null
+    },
+    {
+      "code": "CIV",
+      "name": "Côte d'Ivoire",
+      "slug": "cote-divoire",
+      "flag_url": null
+    },
+    {
+      "code": "ECU",
+      "name": "Ecuador",
+      "slug": "ecuador",
+      "flag_url": null
+    },
+    {
+      "code": "GER",
+      "name": "Germany",
+      "slug": "germany",
+      "flag_url": null
+    },
+    {
+      "code": "CUW",
+      "name": "Curaçao",
+      "slug": "curacao",
+      "flag_url": null
+    },
+    {
+      "code": "NED",
+      "name": "Netherlands",
+      "slug": "netherlands",
+      "flag_url": null
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "slug": "japan",
+      "flag_url": null
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "slug": "sweden",
+      "flag_url": null
+    },
+    {
+      "code": "TUN",
+      "name": "Tunisia",
+      "slug": "tunisia",
+      "flag_url": null
+    },
+    {
+      "code": "BEL",
+      "name": "Belgium",
+      "slug": "belgium",
+      "flag_url": null
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "slug": "egypt",
+      "flag_url": null
+    },
+    {
+      "code": "IRN",
+      "name": "IR Iran",
+      "slug": "iran",
+      "flag_url": null
+    },
+    {
+      "code": "NZL",
+      "name": "New Zealand",
+      "slug": "new-zealand",
+      "flag_url": null
+    },
+    {
+      "code": "KSA",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "flag_url": null
+    },
+    {
+      "code": "URY",
+      "name": "Uruguay",
+      "slug": "uruguay",
+      "flag_url": null
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "slug": "spain",
+      "flag_url": null
+    },
+    {
+      "code": "CPV",
+      "name": "Cabo Verde",
+      "slug": "cabo-verde",
+      "flag_url": null
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "slug": "france",
+      "flag_url": null
+    },
+    {
+      "code": "SEN",
+      "name": "Senegal",
+      "slug": "senegal",
+      "flag_url": null
+    },
+    {
+      "code": "IRQ",
+      "name": "Iraq",
+      "slug": "iraq",
+      "flag_url": null
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "slug": "norway",
+      "flag_url": null
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "slug": "argentina",
+      "flag_url": null
+    },
+    {
+      "code": "ALG",
+      "name": "Algeria",
+      "slug": "algeria",
+      "flag_url": null
+    },
+    {
+      "code": "AUT",
+      "name": "Austria",
+      "slug": "austria",
+      "flag_url": null
+    },
+    {
+      "code": "JOR",
+      "name": "Jordan",
+      "slug": "jordan",
+      "flag_url": null
+    },
+    {
+      "code": "POR",
+      "name": "Portugal",
+      "slug": "portugal",
+      "flag_url": null
+    },
+    {
+      "code": "COD",
+      "name": "Congo DR",
+      "slug": "congo-dr",
+      "flag_url": null
+    },
+    {
+      "code": "UZB",
+      "name": "Uzbekistan",
+      "slug": "uzbekistan",
+      "flag_url": null
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "slug": "colombia",
+      "flag_url": null
+    },
+    {
+      "code": "ENG",
+      "name": "England",
+      "slug": "england",
+      "flag_url": null
+    },
+    {
+      "code": "CRO",
+      "name": "Croatia",
+      "slug": "croatia",
+      "flag_url": null
+    },
+    {
+      "code": "GHA",
+      "name": "Ghana",
+      "slug": "ghana",
+      "flag_url": null
+    },
+    {
+      "code": "PAN",
+      "name": "Panama",
+      "slug": "panama",
+      "flag_url": null
+    }
   ],
   "matches": [
     {
-      "external_id": "WC2026-001",
+      "external_id": "WC2026-GA-001",
       "match_number": 1,
       "stage": "group",
       "group_name": "A",
       "team_a": "MEX",
-      "team_b": "CAN",
-      "kickoff_at": "2026-06-11T20:00:00Z",
-      "venue": "Estadio Azteca, Mexico City"
+      "team_b": "RSA",
+      "kickoff_at": "2026-06-11T00:00:00Z",
+      "venue": "Mexico City Stadium, Mexico City"
     },
     {
-      "external_id": "WC2026-002",
+      "external_id": "WC2026-GA-002",
       "match_number": 2,
       "stage": "group",
-      "group_name": "B",
-      "team_a": "USA",
-      "team_b": "ENG",
-      "kickoff_at": "2026-06-12T00:00:00Z",
-      "venue": "MetLife Stadium, NJ"
+      "group_name": "A",
+      "team_a": "KOR",
+      "team_b": "CZE",
+      "kickoff_at": "2026-06-11T00:00:00Z",
+      "venue": "Estadio Guadalajara, Zapopan"
     },
     {
-      "external_id": "WC2026-003",
+      "external_id": "WC2026-GA-003",
       "match_number": 3,
       "stage": "group",
-      "group_name": "C",
-      "team_a": "ARG",
-      "team_b": "BRA",
-      "kickoff_at": "2026-06-12T20:00:00Z",
-      "venue": "SoFi Stadium, LA"
+      "group_name": "A",
+      "team_a": "CZE",
+      "team_b": "RSA",
+      "kickoff_at": "2026-06-18T00:00:00Z",
+      "venue": "Atlanta Stadium, Atlanta"
     },
     {
-      "external_id": "WC2026-004",
+      "external_id": "WC2026-GA-004",
       "match_number": 4,
       "stage": "group",
-      "group_name": "D",
-      "team_a": "FRA",
-      "team_b": "GER",
-      "kickoff_at": "2026-06-13T19:00:00Z",
-      "venue": "BMO Field, Toronto"
+      "group_name": "A",
+      "team_a": "MEX",
+      "team_b": "KOR",
+      "kickoff_at": "2026-06-18T00:00:00Z",
+      "venue": "Estadio Guadalajara, Zapopan"
     },
     {
-      "external_id": "WC2026-005",
+      "external_id": "WC2026-GA-005",
       "match_number": 5,
       "stage": "group",
-      "group_name": "E",
-      "team_a": "ESP",
-      "team_b": "POR",
-      "kickoff_at": "2026-06-13T22:00:00Z",
-      "venue": "AT&T Stadium, Dallas"
+      "group_name": "A",
+      "team_a": "CZE",
+      "team_b": "MEX",
+      "kickoff_at": "2026-06-24T00:00:00Z",
+      "venue": "Mexico City Stadium, Mexico City"
     },
     {
-      "external_id": "WC2026-006",
+      "external_id": "WC2026-GA-006",
       "match_number": 6,
+      "stage": "group",
+      "group_name": "A",
+      "team_a": "RSA",
+      "team_b": "KOR",
+      "kickoff_at": "2026-06-24T00:00:00Z",
+      "venue": "Estadio Monterrey, Guadalupe"
+    },
+
+    {
+      "external_id": "WC2026-GB-001",
+      "match_number": 7,
+      "stage": "group",
+      "group_name": "B",
+      "team_a": "CAN",
+      "team_b": "BIH",
+      "kickoff_at": "2026-06-12T00:00:00Z",
+      "venue": "Toronto Stadium, Toronto"
+    },
+    {
+      "external_id": "WC2026-GB-002",
+      "match_number": 8,
+      "stage": "group",
+      "group_name": "B",
+      "team_a": "QAT",
+      "team_b": "SUI",
+      "kickoff_at": "2026-06-13T00:00:00Z",
+      "venue": "San Francisco Bay Area Stadium, Santa Clara"
+    },
+    {
+      "external_id": "WC2026-GB-003",
+      "match_number": 9,
+      "stage": "group",
+      "group_name": "B",
+      "team_a": "SUI",
+      "team_b": "BIH",
+      "kickoff_at": "2026-06-18T00:00:00Z",
+      "venue": "Los Angeles Stadium, Los Angeles"
+    },
+    {
+      "external_id": "WC2026-GB-004",
+      "match_number": 10,
+      "stage": "group",
+      "group_name": "B",
+      "team_a": "CAN",
+      "team_b": "QAT",
+      "kickoff_at": "2026-06-18T00:00:00Z",
+      "venue": "BC Place, Vancouver"
+    },
+    {
+      "external_id": "WC2026-GB-005",
+      "match_number": 11,
+      "stage": "group",
+      "group_name": "B",
+      "team_a": "SUI",
+      "team_b": "CAN",
+      "kickoff_at": "2026-06-24T00:00:00Z",
+      "venue": "BC Place, Vancouver"
+    },
+    {
+      "external_id": "WC2026-GB-006",
+      "match_number": 12,
+      "stage": "group",
+      "group_name": "B",
+      "team_a": "BIH",
+      "team_b": "QAT",
+      "kickoff_at": "2026-06-24T00:00:00Z",
+      "venue": "Seattle Stadium, Seattle"
+    },
+
+    {
+      "external_id": "WC2026-GC-001",
+      "match_number": 13,
+      "stage": "group",
+      "group_name": "C",
+      "team_a": "BRA",
+      "team_b": "MAR",
+      "kickoff_at": "2026-06-13T00:00:00Z",
+      "venue": "New York New Jersey Stadium, East Rutherford"
+    },
+    {
+      "external_id": "WC2026-GC-002",
+      "match_number": 14,
+      "stage": "group",
+      "group_name": "C",
+      "team_a": "HTI",
+      "team_b": "SCO",
+      "kickoff_at": "2026-06-13T00:00:00Z",
+      "venue": "Boston Stadium, Foxborough"
+    },
+    {
+      "external_id": "WC2026-GC-003",
+      "match_number": 15,
+      "stage": "group",
+      "group_name": "C",
+      "team_a": "SCO",
+      "team_b": "MAR",
+      "kickoff_at": "2026-06-19T00:00:00Z",
+      "venue": "Boston Stadium, Foxborough"
+    },
+    {
+      "external_id": "WC2026-GC-004",
+      "match_number": 16,
+      "stage": "group",
+      "group_name": "C",
+      "team_a": "BRA",
+      "team_b": "HTI",
+      "kickoff_at": "2026-06-19T00:00:00Z",
+      "venue": "Philadelphia Stadium, Philadelphia"
+    },
+    {
+      "external_id": "WC2026-GC-005",
+      "match_number": 17,
+      "stage": "group",
+      "group_name": "C",
+      "team_a": "SCO",
+      "team_b": "BRA",
+      "kickoff_at": "2026-06-24T00:00:00Z",
+      "venue": "Miami Stadium, Miami"
+    },
+    {
+      "external_id": "WC2026-GC-006",
+      "match_number": 18,
+      "stage": "group",
+      "group_name": "C",
+      "team_a": "MAR",
+      "team_b": "HTI",
+      "kickoff_at": "2026-06-24T00:00:00Z",
+      "venue": "Atlanta Stadium, Atlanta"
+    },
+
+    {
+      "external_id": "WC2026-GD-001",
+      "match_number": 19,
+      "stage": "group",
+      "group_name": "D",
+      "team_a": "USA",
+      "team_b": "PAR",
+      "kickoff_at": "2026-06-12T00:00:00Z",
+      "venue": "Los Angeles Stadium, Los Angeles"
+    },
+    {
+      "external_id": "WC2026-GD-002",
+      "match_number": 20,
+      "stage": "group",
+      "group_name": "D",
+      "team_a": "AUS",
+      "team_b": "TUR",
+      "kickoff_at": "2026-06-13T00:00:00Z",
+      "venue": "BC Place, Vancouver"
+    },
+    {
+      "external_id": "WC2026-GD-003",
+      "match_number": 21,
+      "stage": "group",
+      "group_name": "D",
+      "team_a": "TUR",
+      "team_b": "PAR",
+      "kickoff_at": "2026-06-19T00:00:00Z",
+      "venue": "San Francisco Bay Area Stadium, Santa Clara"
+    },
+    {
+      "external_id": "WC2026-GD-004",
+      "match_number": 22,
+      "stage": "group",
+      "group_name": "D",
+      "team_a": "USA",
+      "team_b": "AUS",
+      "kickoff_at": "2026-06-19T00:00:00Z",
+      "venue": "Seattle Stadium, Seattle"
+    },
+    {
+      "external_id": "WC2026-GD-005",
+      "match_number": 23,
+      "stage": "group",
+      "group_name": "D",
+      "team_a": "TUR",
+      "team_b": "USA",
+      "kickoff_at": "2026-06-25T00:00:00Z",
+      "venue": "Los Angeles Stadium, Los Angeles"
+    },
+    {
+      "external_id": "WC2026-GD-006",
+      "match_number": 24,
+      "stage": "group",
+      "group_name": "D",
+      "team_a": "PAR",
+      "team_b": "AUS",
+      "kickoff_at": "2026-06-25T00:00:00Z",
+      "venue": "San Francisco Bay Area Stadium, Santa Clara"
+    },
+
+    {
+      "external_id": "WC2026-GE-001",
+      "match_number": 25,
+      "stage": "group",
+      "group_name": "E",
+      "team_a": "CIV",
+      "team_b": "ECU",
+      "kickoff_at": "2026-06-14T00:00:00Z",
+      "venue": "Philadelphia Stadium, Philadelphia"
+    },
+    {
+      "external_id": "WC2026-GE-002",
+      "match_number": 26,
+      "stage": "group",
+      "group_name": "E",
+      "team_a": "GER",
+      "team_b": "CUW",
+      "kickoff_at": "2026-06-14T00:00:00Z",
+      "venue": "Houston Stadium, Houston"
+    },
+    {
+      "external_id": "WC2026-GE-003",
+      "match_number": 27,
+      "stage": "group",
+      "group_name": "E",
+      "team_a": "GER",
+      "team_b": "CIV",
+      "kickoff_at": "2026-06-20T00:00:00Z",
+      "venue": "Toronto Stadium, Toronto"
+    },
+    {
+      "external_id": "WC2026-GE-004",
+      "match_number": 28,
+      "stage": "group",
+      "group_name": "E",
+      "team_a": "ECU",
+      "team_b": "CUW",
+      "kickoff_at": "2026-06-21T00:00:00Z",
+      "venue": "Kansas City Stadium, Kansas City"
+    },
+    {
+      "external_id": "WC2026-GE-005",
+      "match_number": 29,
+      "stage": "group",
+      "group_name": "E",
+      "team_a": "CIV",
+      "team_b": "CUW",
+      "kickoff_at": "2026-06-24T00:00:00Z",
+      "venue": "Toronto Stadium, Toronto"
+    },
+    {
+      "external_id": "WC2026-GE-006",
+      "match_number": 30,
+      "stage": "group",
+      "group_name": "E",
+      "team_a": "GER",
+      "team_b": "ECU",
+      "kickoff_at": "2026-06-24T00:00:00Z",
+      "venue": "Toronto Stadium, Toronto"
+    },
+
+    {
+      "external_id": "WC2026-GF-001",
+      "match_number": 31,
       "stage": "group",
       "group_name": "F",
       "team_a": "NED",
-      "team_b": "BEL",
-      "kickoff_at": "2026-06-14T18:00:00Z",
-      "venue": "BC Place, Vancouver"
+      "team_b": "JPN",
+      "kickoff_at": "2026-06-14T00:00:00Z",
+      "venue": "Dallas Stadium, Arlington"
+    },
+    {
+      "external_id": "WC2026-GF-002",
+      "match_number": 32,
+      "stage": "group",
+      "group_name": "F",
+      "team_a": "SWE",
+      "team_b": "TUN",
+      "kickoff_at": "2026-06-14T00:00:00Z",
+      "venue": "Estadio Monterrey, Guadalupe"
+    },
+    {
+      "external_id": "WC2026-GF-003",
+      "match_number": 33,
+      "stage": "group",
+      "group_name": "F",
+      "team_a": "JPN",
+      "team_b": "TUN",
+      "kickoff_at": "2026-06-20T00:00:00Z",
+      "venue": "Guadalajara Stadium, Zapopan"
+    },
+    {
+      "external_id": "WC2026-GF-004",
+      "match_number": 34,
+      "stage": "group",
+      "group_name": "F",
+      "team_a": "NED",
+      "team_b": "SWE",
+      "kickoff_at": "2026-06-20T00:00:00Z",
+      "venue": "Houston Stadium, Houston"
+    },
+    {
+      "external_id": "WC2026-GF-005",
+      "match_number": 35,
+      "stage": "group",
+      "group_name": "F",
+      "team_a": "JPN",
+      "team_b": "NED",
+      "kickoff_at": "2026-06-24T00:00:00Z",
+      "venue": "Dallas Stadium, Arlington"
+    },
+    {
+      "external_id": "WC2026-GF-006",
+      "match_number": 36,
+      "stage": "group",
+      "group_name": "F",
+      "team_a": "SWE",
+      "team_b": "TUN",
+      "kickoff_at": "2026-06-24T00:00:00Z",
+      "venue": "Guadalajara Stadium, Zapopan"
+    },
+
+    {
+      "external_id": "WC2026-GG-001",
+      "match_number": 37,
+      "stage": "group",
+      "group_name": "G",
+      "team_a": "IRN",
+      "team_b": "NZL",
+      "kickoff_at": "2026-06-15T00:00:00Z",
+      "venue": "Los Angeles Stadium, Los Angeles"
+    },
+    {
+      "external_id": "WC2026-GG-002",
+      "match_number": 38,
+      "stage": "group",
+      "group_name": "G",
+      "team_a": "BEL",
+      "team_b": "EGY",
+      "kickoff_at": "2026-06-15T00:00:00Z",
+      "venue": "Seattle Stadium, Seattle"
+    },
+    {
+      "external_id": "WC2026-GG-003",
+      "match_number": 39,
+      "stage": "group",
+      "group_name": "G",
+      "team_a": "BEL",
+      "team_b": "IRN",
+      "kickoff_at": "2026-06-21T00:00:00Z",
+      "venue": "Seattle Stadium, Seattle"
+    },
+    {
+      "external_id": "WC2026-GG-004",
+      "match_number": 40,
+      "stage": "group",
+      "group_name": "G",
+      "team_a": "EGY",
+      "team_b": "NZL",
+      "kickoff_at": "2026-06-21T00:00:00Z",
+      "venue": "Los Angeles Stadium, Los Angeles"
+    },
+    {
+      "external_id": "WC2026-GG-005",
+      "match_number": 41,
+      "stage": "group",
+      "group_name": "G",
+      "team_a": "BEL",
+      "team_b": "NZL",
+      "kickoff_at": "2026-06-25T00:00:00Z",
+      "venue": "Seattle Stadium, Seattle"
+    },
+    {
+      "external_id": "WC2026-GG-006",
+      "match_number": 42,
+      "stage": "group",
+      "group_name": "G",
+      "team_a": "EGY",
+      "team_b": "IRN",
+      "kickoff_at": "2026-06-25T00:00:00Z",
+      "venue": "Los Angeles Stadium, Los Angeles"
+    },
+
+    {
+      "external_id": "WC2026-GH-001",
+      "match_number": 43,
+      "stage": "group",
+      "group_name": "H",
+      "team_a": "KSA",
+      "team_b": "URY",
+      "kickoff_at": "2026-06-15T00:00:00Z",
+      "venue": "Miami Stadium, Miami"
+    },
+    {
+      "external_id": "WC2026-GH-002",
+      "match_number": 44,
+      "stage": "group",
+      "group_name": "H",
+      "team_a": "ESP",
+      "team_b": "CPV",
+      "kickoff_at": "2026-06-15T00:00:00Z",
+      "venue": "Atlanta Stadium, Atlanta"
+    },
+    {
+      "external_id": "WC2026-GH-003",
+      "match_number": 45,
+      "stage": "group",
+      "group_name": "H",
+      "team_a": "ESP",
+      "team_b": "KSA",
+      "kickoff_at": "2026-06-21T00:00:00Z",
+      "venue": "Atlanta Stadium, Atlanta"
+    },
+    {
+      "external_id": "WC2026-GH-004",
+      "match_number": 46,
+      "stage": "group",
+      "group_name": "H",
+      "team_a": "URY",
+      "team_b": "CPV",
+      "kickoff_at": "2026-06-21T00:00:00Z",
+      "venue": "Miami Stadium, Miami"
+    },
+    {
+      "external_id": "WC2026-GH-005",
+      "match_number": 47,
+      "stage": "group",
+      "group_name": "H",
+      "team_a": "ESP",
+      "team_b": "URY",
+      "kickoff_at": "2026-06-25T00:00:00Z",
+      "venue": "Atlanta Stadium, Atlanta"
+    },
+    {
+      "external_id": "WC2026-GH-006",
+      "match_number": 48,
+      "stage": "group",
+      "group_name": "H",
+      "team_a": "KSA",
+      "team_b": "CPV",
+      "kickoff_at": "2026-06-25T00:00:00Z",
+      "venue": "Miami Stadium, Miami"
+    },
+
+    {
+      "external_id": "WC2026-GI-001",
+      "match_number": 49,
+      "stage": "group",
+      "group_name": "I",
+      "team_a": "FRA",
+      "team_b": "SEN",
+      "kickoff_at": "2026-06-16T00:00:00Z",
+      "venue": "New York New Jersey Stadium, East Rutherford"
+    },
+    {
+      "external_id": "WC2026-GI-002",
+      "match_number": 50,
+      "stage": "group",
+      "group_name": "I",
+      "team_a": "IRQ",
+      "team_b": "NOR",
+      "kickoff_at": "2026-06-16T00:00:00Z",
+      "venue": "Boston Stadium, Foxborough"
+    },
+    {
+      "external_id": "WC2026-GI-003",
+      "match_number": 51,
+      "stage": "group",
+      "group_name": "I",
+      "team_a": "NOR",
+      "team_b": "SEN",
+      "kickoff_at": "2026-06-22T00:00:00Z",
+      "venue": "Boston Stadium, Foxborough"
+    },
+    {
+      "external_id": "WC2026-GI-004",
+      "match_number": 52,
+      "stage": "group",
+      "group_name": "I",
+      "team_a": "FRA",
+      "team_b": "IRQ",
+      "kickoff_at": "2026-06-22T00:00:00Z",
+      "venue": "New York New Jersey Stadium, East Rutherford"
+    },
+    {
+      "external_id": "WC2026-GI-005",
+      "match_number": 53,
+      "stage": "group",
+      "group_name": "I",
+      "team_a": "NOR",
+      "team_b": "FRA",
+      "kickoff_at": "2026-06-26T00:00:00Z",
+      "venue": "Boston Stadium, Foxborough"
+    },
+    {
+      "external_id": "WC2026-GI-006",
+      "match_number": 54,
+      "stage": "group",
+      "group_name": "I",
+      "team_a": "SEN",
+      "team_b": "IRQ",
+      "kickoff_at": "2026-06-26T00:00:00Z",
+      "venue": "New York New Jersey Stadium, East Rutherford"
+    },
+
+    {
+      "external_id": "WC2026-GJ-001",
+      "match_number": 55,
+      "stage": "group",
+      "group_name": "J",
+      "team_a": "ARG",
+      "team_b": "ALG",
+      "kickoff_at": "2026-06-16T00:00:00Z",
+      "venue": "Kansas City Stadium, Kansas City"
+    },
+    {
+      "external_id": "WC2026-GJ-002",
+      "match_number": 56,
+      "stage": "group",
+      "group_name": "J",
+      "team_a": "AUT",
+      "team_b": "JOR",
+      "kickoff_at": "2026-06-16T00:00:00Z",
+      "venue": "San Francisco Bay Area Stadium, Santa Clara"
+    },
+    {
+      "external_id": "WC2026-GJ-003",
+      "match_number": 57,
+      "stage": "group",
+      "group_name": "J",
+      "team_a": "ALG",
+      "team_b": "AUT",
+      "kickoff_at": "2026-06-22T00:00:00Z",
+      "venue": "San Francisco Bay Area Stadium, Santa Clara"
+    },
+    {
+      "external_id": "WC2026-GJ-004",
+      "match_number": 58,
+      "stage": "group",
+      "group_name": "J",
+      "team_a": "ARG",
+      "team_b": "JOR",
+      "kickoff_at": "2026-06-22T00:00:00Z",
+      "venue": "Kansas City Stadium, Kansas City"
+    },
+    {
+      "external_id": "WC2026-GJ-005",
+      "match_number": 59,
+      "stage": "group",
+      "group_name": "J",
+      "team_a": "ALG",
+      "team_b": "JOR",
+      "kickoff_at": "2026-06-26T00:00:00Z",
+      "venue": "San Francisco Bay Area Stadium, Santa Clara"
+    },
+    {
+      "external_id": "WC2026-GJ-006",
+      "match_number": 60,
+      "stage": "group",
+      "group_name": "J",
+      "team_a": "ARG",
+      "team_b": "AUT",
+      "kickoff_at": "2026-06-26T00:00:00Z",
+      "venue": "Kansas City Stadium, Kansas City"
+    },
+
+    {
+      "external_id": "WC2026-GK-001",
+      "match_number": 61,
+      "stage": "group",
+      "group_name": "K",
+      "team_a": "POR",
+      "team_b": "COD",
+      "kickoff_at": "2026-06-17T00:00:00Z",
+      "venue": "Houston Stadium, Houston"
+    },
+    {
+      "external_id": "WC2026-GK-002",
+      "match_number": 62,
+      "stage": "group",
+      "group_name": "K",
+      "team_a": "UZB",
+      "team_b": "COL",
+      "kickoff_at": "2026-06-17T00:00:00Z",
+      "venue": "Mexico City Stadium, Mexico City"
+    },
+    {
+      "external_id": "WC2026-GK-003",
+      "match_number": 63,
+      "stage": "group",
+      "group_name": "K",
+      "team_a": "COL",
+      "team_b": "COD",
+      "kickoff_at": "2026-06-23T00:00:00Z",
+      "venue": "Houston Stadium, Houston"
+    },
+    {
+      "external_id": "WC2026-GK-004",
+      "match_number": 64,
+      "stage": "group",
+      "group_name": "K",
+      "team_a": "POR",
+      "team_b": "UZB",
+      "kickoff_at": "2026-06-23T00:00:00Z",
+      "venue": "Mexico City Stadium, Mexico City"
+    },
+    {
+      "external_id": "WC2026-GK-005",
+      "match_number": 65,
+      "stage": "group",
+      "group_name": "K",
+      "team_a": "POR",
+      "team_b": "COL",
+      "kickoff_at": "2026-06-27T00:00:00Z",
+      "venue": "Houston Stadium, Houston"
+    },
+    {
+      "external_id": "WC2026-GK-006",
+      "match_number": 66,
+      "stage": "group",
+      "group_name": "K",
+      "team_a": "COD",
+      "team_b": "UZB",
+      "kickoff_at": "2026-06-27T00:00:00Z",
+      "venue": "Mexico City Stadium, Mexico City"
+    },
+
+    {
+      "external_id": "WC2026-GL-001",
+      "match_number": 67,
+      "stage": "group",
+      "group_name": "L",
+      "team_a": "GHA",
+      "team_b": "PAN",
+      "kickoff_at": "2026-06-17T00:00:00Z",
+      "venue": "Toronto Stadium, Toronto"
+    },
+    {
+      "external_id": "WC2026-GL-002",
+      "match_number": 68,
+      "stage": "group",
+      "group_name": "L",
+      "team_a": "ENG",
+      "team_b": "CRO",
+      "kickoff_at": "2026-06-17T00:00:00Z",
+      "venue": "Dallas Stadium, Arlington"
+    },
+    {
+      "external_id": "WC2026-GL-003",
+      "match_number": 69,
+      "stage": "group",
+      "group_name": "L",
+      "team_a": "CRO",
+      "team_b": "PAN",
+      "kickoff_at": "2026-06-23T00:00:00Z",
+      "venue": "Toronto Stadium, Toronto"
+    },
+    {
+      "external_id": "WC2026-GL-004",
+      "match_number": 70,
+      "stage": "group",
+      "group_name": "L",
+      "team_a": "ENG",
+      "team_b": "GHA",
+      "kickoff_at": "2026-06-23T00:00:00Z",
+      "venue": "Dallas Stadium, Arlington"
+    },
+    {
+      "external_id": "WC2026-GL-005",
+      "match_number": 71,
+      "stage": "group",
+      "group_name": "L",
+      "team_a": "ENG",
+      "team_b": "PAN",
+      "kickoff_at": "2026-06-27T00:00:00Z",
+      "venue": "Dallas Stadium, Arlington"
+    },
+    {
+      "external_id": "WC2026-GL-006",
+      "match_number": 72,
+      "stage": "group",
+      "group_name": "L",
+      "team_a": "CRO",
+      "team_b": "GHA",
+      "kickoff_at": "2026-06-27T00:00:00Z",
+      "venue": "Toronto Stadium, Toronto"
     }
   ]
 }

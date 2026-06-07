@@ -12,6 +12,8 @@
 
 @{
     var teams = DataService.GetTeams();
+    var home = teams.FirstOrDefault(t => t.Name == homeName);
+    var away = teams.FirstOrDefault(t => t.Name == awayName);
 }
 
 <div class="row g-3 mt-2">
@@ -20,12 +22,37 @@
         <select class="form-select" @onchange="OnHomeChanged">
             @foreach (var t in teams)
             {
-                <option value="@t.Name">@t.Flag @t.Name</option>
+                <option value="@t.Name" selected="@(t.Name == homeName)">@t.Flag @t.Name</option>
             }
         </select>
+
+        @if (home is not null)
+        {
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">@home.Flag @home.Name</h5>
+                    <div class="mb-2">
+                        <span class="fw-bold">Attack: @home.AttackRating</span>
+                        <div class="progress" style="height:18px">
+                            <div class="progress-bar bg-danger" style="width:@(home.AttackRating * 10)%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <span class="fw-bold">Defense: @home.DefenseRating</span>
+                        <div class="progress" style="height:18px">
+                            <div class="progress-bar bg-primary" style="width:@(home.DefenseRating * 10)%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="fw-bold">Strength: @(home.AttackRating - home.DefenseRating)</span>
+                        <span class="text-muted">(ATK - DEF)</span>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
 
-    <div class="col-md-2 d-flex align-items-end justify-content-center">
+    <div class="col-md-2 d-flex align-items-center justify-content-center">
         <span class="fs-3 fw-bold">VS</span>
     </div>
 
@@ -37,6 +64,31 @@
                 <option value="@t.Name" selected="@(t.Name == awayName)">@t.Flag @t.Name</option>
             }
         </select>
+
+        @if (away is not null)
+        {
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">@away.Flag @away.Name</h5>
+                    <div class="mb-2">
+                        <span class="fw-bold">Attack: @away.AttackRating</span>
+                        <div class="progress" style="height:18px">
+                            <div class="progress-bar bg-danger" style="width:@(away.AttackRating * 10)%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <span class="fw-bold">Defense: @away.DefenseRating</span>
+                        <div class="progress" style="height:18px">
+                            <div class="progress-bar bg-primary" style="width:@(away.DefenseRating * 10)%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="fw-bold">Strength: @(away.AttackRating - away.DefenseRating)</span>
+                        <span class="text-muted">(ATK - DEF)</span>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
 </div>
 
@@ -63,8 +115,8 @@
         awayName = teams[1].Name;
     }
 
-    private void OnHomeChanged(ChangeEventArgs e) => homeName = e.Value?.ToString() ?? "";
-    private void OnAwayChanged(ChangeEventArgs e) => awayName = e.Value?.ToString() ?? "";
+    private void OnHomeChanged(ChangeEventArgs e) { homeName = e.Value?.ToString() ?? ""; result = null; }
+    private void OnAwayChanged(ChangeEventArgs e) { awayName = e.Value?.ToString() ?? ""; result = null; }
 
     private void Predict()
     {

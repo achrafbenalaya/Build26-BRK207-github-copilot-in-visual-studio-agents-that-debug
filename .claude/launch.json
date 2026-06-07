@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "worldcup2026",
+      "runtimeExecutable": "dotnet",
+      "runtimeArgs": ["run", "--project", "worldcup2026/worldcup2026.csproj"],
+      "port": 5005
+    }
+  ]
+}
