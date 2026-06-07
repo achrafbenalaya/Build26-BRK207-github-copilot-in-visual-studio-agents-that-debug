@@ -1,0 +1,49 @@
+@page "/standings"
+@using worldcup2026.Models
+@using worldcup2026.Services
+@inject WorldCupDataService DataService
+
+<PageTitle>Standings — World Cup 2026</PageTitle>
+
+<h2>🏆 Group Standings</h2>
+<p class="text-muted">Points based on match results: Win = 3 pts · Draw = 1 pt · Loss = 0 pts</p>
+
+@{
+    var teams  = DataService.GetTeams();
+    var matches = DataService.GetMatches();
+
+    var points = new Dictionary<string, int>();
+    foreach (var t in teams) points[t.Name] = 0;
+
+    foreach (var m in matches)
+    {
+        if (m.HomeGoals > m.AwayGoals)       points[m.HomeTeam] += 3;
+        else if (m.HomeGoals == m.AwayGoals) { points[m.HomeTeam] += 1; points[m.AwayTeam] += 1; }
+        else                                  points[m.AwayTeam] += 3;
+    }
+
+    var groups = teams.GroupBy(t => t.Group).OrderBy(g => g.Key);
+}
+
+<div class="row">
+    @foreach (var group in groups)
+    {
+        <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">Group @group.Key</h5>
+            <table class="table table-bordered table-sm">
+                <thead class="table-dark">
+                    <tr><th>Team</th><th class="text-center">Pts</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var team in group.OrderByDescending(t => points[t.Name]))
+                    {
+                        <tr>
+                            <td>@team.Flag @team.Name</td>
+                            <td class="text-center fw-bold">@points[team.Name]</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

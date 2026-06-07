@@ -1,8 +1,14 @@
 using worldcup2026.Components;
+using worldcup2026.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<WorldCupDataService>();
+builder.Services.AddSingleton<PredictionService>();
+builder.Services.AddSingleton<SlowStandingsService>();
+builder.Services.AddSingleton<FastStandingsService>();
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 

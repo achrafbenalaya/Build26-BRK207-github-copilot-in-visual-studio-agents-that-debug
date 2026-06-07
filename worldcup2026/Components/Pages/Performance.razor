@@ -1,0 +1,68 @@
+@page "/performance"
+@rendermode InteractiveServer
+@using System.Diagnostics
+@using worldcup2026.Services
+@inject SlowStandingsService SlowService
+@inject FastStandingsService FastService
+
+<PageTitle>Performance — World Cup 2026</PageTitle>
+
+<h2>⚡ Performance Comparison</h2>
+<p class="text-muted">Compare a slow standings calculation against an optimized one using <code>Stopwatch</code>.</p>
+
+<button class="btn btn-primary btn-lg mt-2" @onclick="RunComparison" disabled="@running">
+    @(running ? "Running…" : "▶ Run Comparison")
+</button>
+
+@if (slowMs >= 0)
+{
+    <div class="mt-4">
+        <table class="table table-bordered w-auto">
+            <thead class="table-dark">
+                <tr><th>Method</th><th>Time (ms)</th></tr>
+            </thead>
+            <tbody>
+                <tr class="table-danger">
+                    <td>SlowStandingsService</td>
+                    <td>@slowMs ms</td>
+                </tr>
+                <tr class="table-success">
+                    <td>FastStandingsService</td>
+                    <td>@fastMs ms</td>
+                </tr>
+            </tbody>
+        </table>
+
+        @if (fastMs > 0)
+        {
+            <p class="mt-2 fs-5">
+                ⚡ Fast version is <strong>@((slowMs / (double)fastMs).ToString("F0"))×</strong> faster!
+            </p>
+        }
+    </div>
+}
+
+@code {
+    private long slowMs = -1;
+    private long fastMs = -1;
+    private bool running = false;
+
+    private async Task RunComparison()
+    {
+        running = true;
+        StateHasChanged();
+        await Task.Delay(10); // let UI update before blocking
+
+        var sw = Stopwatch.StartNew();
+        SlowService.GetStandings();
+        sw.Stop();
+        slowMs = sw.ElapsedMilliseconds;
+
+        sw.Restart();
+        FastService.GetStandings();
+        sw.Stop();
+        fastMs = sw.ElapsedMilliseconds;
+
+        running = false;
+    }
+}

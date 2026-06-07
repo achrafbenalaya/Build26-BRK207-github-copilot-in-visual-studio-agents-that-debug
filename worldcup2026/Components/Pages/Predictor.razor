@@ -1,0 +1,76 @@
+@page "/predictor"
+@rendermode InteractiveServer
+@using worldcup2026.Models
+@using worldcup2026.Services
+@inject WorldCupDataService DataService
+@inject PredictionService PredictionSvc
+
+<PageTitle>Predictor — World Cup 2026</PageTitle>
+
+<h2>🔮 Match Predictor</h2>
+<p class="text-muted">Select two teams and predict the winner.</p>
+
+@{
+    var teams = DataService.GetTeams();
+}
+
+<div class="row g-3 mt-2">
+    <div class="col-md-5">
+        <label class="form-label fw-bold">Home Team</label>
+        <select class="form-select" @onchange="OnHomeChanged">
+            @foreach (var t in teams)
+            {
+                <option value="@t.Name">@t.Flag @t.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="col-md-2 d-flex align-items-end justify-content-center">
+        <span class="fs-3 fw-bold">VS</span>
+    </div>
+
+    <div class="col-md-5">
+        <label class="form-label fw-bold">Away Team</label>
+        <select class="form-select" @onchange="OnAwayChanged">
+            @foreach (var t in teams)
+            {
+                <option value="@t.Name" selected="@(t.Name == awayName)">@t.Flag @t.Name</option>
+            }
+        </select>
+    </div>
+</div>
+
+<div class="mt-4">
+    <button class="btn btn-success btn-lg" @onclick="Predict">Predict Winner</button>
+</div>
+
+@if (result is not null)
+{
+    <div class="alert alert-info mt-4 fs-5">
+        🏆 @result
+    </div>
+}
+
+@code {
+    private string homeName = "";
+    private string awayName = "";
+    private string? result;
+
+    protected override void OnInitialized()
+    {
+        var teams = DataService.GetTeams();
+        homeName = teams[0].Name;
+        awayName = teams[1].Name;
+    }
+
+    private void OnHomeChanged(ChangeEventArgs e) => homeName = e.Value?.ToString() ?? "";
+    private void OnAwayChanged(ChangeEventArgs e) => awayName = e.Value?.ToString() ?? "";
+
+    private void Predict()
+    {
+        var teams = DataService.GetTeams();
+        var home = teams.First(t => t.Name == homeName);
+        var away = teams.First(t => t.Name == awayName);
+        result = PredictionSvc.Predict(home, away);
+    }
+}
